@@ -2,8 +2,7 @@ import {ScaledSheet} from 'react-native-size-matters';
 
 export const styles = ScaledSheet.create({
   headerView: {
-    marginTop: '5@ms',
-    // backgroundColor: '#92B6D4',
+    marginTop: '10@ms',
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',

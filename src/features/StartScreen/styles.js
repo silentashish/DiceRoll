@@ -31,13 +31,13 @@ export const styles = ScaledSheet.create({
     justifyContent: 'center',
   },
   instructiontext: {
-    fontSize: '20@ms',
+    fontSize: '18@ms',
     color: 'white',
   },
   instructionTextTitle: {
     margin: '8@ms',
     color: '#EE6C4D',
-    fontSize: '23@ms',
+    fontSize: '20@ms',
     fontWeight: 'bold',
   },
   buttonBox: {flex: 1},

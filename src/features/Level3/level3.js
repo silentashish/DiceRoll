@@ -9,7 +9,8 @@ import {
 } from 'react-native';
 import {AppButton} from '../../components/index';
 import images from '../../utils/images';
-import {styles} from './styles';
+import {styles} from '../Level1/styles';
+import {styles3} from './styles3';
 import {showToast} from '../../utils/showAlert';
 
 import LottieView from 'lottie-react-native';
@@ -208,8 +209,19 @@ const Level3 = props => {
 
   const renderOptions = () => {
     return (
-      <View style={styles.optionsView}>
-        <View style={styles.optionView2}>
+      <View style={styles3.optionsView}>
+        <View style={styles.animationBox}>
+          <LottieView
+            source={require('../../assets/animation/brainwave.json')}
+            autoPlay
+            loop
+            style={styles3.animation2}
+          />
+        </View>
+        <Text style={[styles.specialInstruction, {fontWeight: 'bold'}]}>
+          Use Your Brain Power
+        </Text>
+        <View style={styles3.optionView2}>
           <ImageBackground
             source={
               (allOptions[0] == 1 && images.dice1) ||
@@ -219,10 +231,10 @@ const Level3 = props => {
               (allOptions[0] == 5 && images.dice5) ||
               (allOptions[0] == 6 && images.dice6)
             }
-            style={styles.optionDice}
+            style={styles3.optionDice}
             resizeMode="contain">
             <TouchableOpacity
-              style={styles.optionButton}
+              style={styles3.optionButton}
               onPress={() => selectAnswer(allOptions[0])}
             />
           </ImageBackground>
@@ -236,16 +248,16 @@ const Level3 = props => {
               (allOptions[1] == 5 && images.dice5) ||
               (allOptions[1] == 6 && images.dice6)
             }
-            style={styles.optionDice}
+            style={styles3.optionDice}
             resizeMode="contain">
             <TouchableOpacity
-              style={styles.optionButton}
+              style={styles3.optionButton}
               onPress={() => selectAnswer(allOptions[1])}
             />
           </ImageBackground>
         </View>
 
-        <View style={styles.optionView2}>
+        <View style={styles3.optionView2}>
           <ImageBackground
             source={
               (allOptions[2] == 1 && images.dice1) ||
@@ -255,10 +267,10 @@ const Level3 = props => {
               (allOptions[2] == 5 && images.dice5) ||
               (allOptions[2] == 6 && images.dice6)
             }
-            style={styles.optionDice}
+            style={styles3.optionDice}
             resizeMode="contain">
             <TouchableOpacity
-              style={styles.optionButton}
+              style={styles3.optionButton}
               onPress={() => selectAnswer(allOptions[2])}
             />
           </ImageBackground>
@@ -272,10 +284,10 @@ const Level3 = props => {
               (allOptions[3] == 5 && images.dice5) ||
               (allOptions[3] == 6 && images.dice6)
             }
-            style={styles.optionDice}
+            style={styles3.optionDice}
             resizeMode="contain">
             <TouchableOpacity
-              style={styles.optionButton}
+              style={styles3.optionButton}
               onPress={() => selectAnswer(allOptions[3])}
             />
           </ImageBackground>
@@ -287,22 +299,29 @@ const Level3 = props => {
   renderInstructions = () => {
     return (
       <View style={styles.instructionView}>
-        <Text style={styles.subHeading}>Please Read the Instructions</Text>
+        <Text style={styles.subHeading}>Instructions To Follow</Text>
+        <View style={styles.animationBox}>
+          <LottieView
+            source={require('../../assets/animation/instruction.json')}
+            loop
+            autoPlay
+            style={styles.animation}
+          />
+        </View>
         <Text style={styles.instruction}>
-          Click the button which says 'Roll Dice'. It will roll the dice and 4
-          options will appear on the screen.{'\n'}You have to guess the number.
-          You will be given 20 chance to roll the dice. If you successfully
-          guess the correct number atleast 7 times, you will proceed to next
-          level of the game. {'\n'}Its's all about luck don't get dishearted if
-          you couldn't guess it correctly.
+          Click on Roll Dice. It will roll the dice and 2 options will appear on
+          the screen.Guess the number. You will get 20 chances to roll.
         </Text>
-        <Text style={styles.instruction2}>Best of Luck!</Text>
+        <Text style={[styles.instruction, styles.specialInstruction]}>
+          Answer at least 7 rolls correctly.{'\n'}And Boom To the next Level.
+        </Text>
+        <Text style={styles.instruction2}>All the Best!</Text>
       </View>
     );
   };
 
   return (
-    <View style={{flex: 1, backgroundColor: 'white'}}>
+    <View style={{flex: 1, backgroundColor: '#293241'}}>
       <SafeAreaView backgroundColor={'#92B6D4'} opacity={0.95} />
       <View style={styles.headerView}>
         <Text style={styles.headerText}>Dice Roll</Text>
@@ -315,7 +334,7 @@ const Level3 = props => {
         </View>
 
         <View style={styles.score}>
-          <Text style={styles.headingText}>Dice Roll# </Text>
+          <Text style={styles.headingText}>Dice Roll: </Text>
           <Text style={styles.valueText}>{diceRollNumber}</Text>
         </View>
       </View>

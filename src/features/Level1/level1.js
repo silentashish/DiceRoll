@@ -240,8 +240,6 @@ const Level1 = props => {
         <Text style={styles.instruction}>
           Click on Roll Dice. It will roll the dice and 2 options will appear on
           the screen.Guess the number. You will get 20 chances to roll.
-          {/* Answer at
-          least 7 correctly. And Boom To the next Level. */}
         </Text>
         <Text style={[styles.instruction, styles.specialInstruction]}>
           Answer at least 7 rolls correctly.{'\n'}And Boom To the next Level.
