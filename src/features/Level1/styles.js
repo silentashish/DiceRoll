@@ -2,8 +2,8 @@ import {ScaledSheet} from 'react-native-size-matters';
 
 export const styles = ScaledSheet.create({
   headerView: {
-    height: '40@ms',
-    backgroundColor: '#92B6D4',
+    marginTop: '5@ms',
+    // backgroundColor: '#92B6D4',
     justifyContent: 'center',
     alignContent: 'center',
     alignItems: 'center',
@@ -27,8 +27,8 @@ export const styles = ScaledSheet.create({
   },
   headerText: {
     color: 'white',
-    fontSize: '20@ms',
-    fontWeight: 'bold',
+    fontSize: '45@ms',
+    fontFamily: 'Nanum Pen Regular',
   },
   scoreView: {
     flexDirection: 'row',
@@ -39,7 +39,7 @@ export const styles = ScaledSheet.create({
   score: {
     height: '45@ms',
     width: '45%',
-    backgroundColor: '#92B6D4',
+    backgroundColor: '#EE6C4D',
     borderRadius: '5@ms',
     alignItems: 'center',
     justifyContent: 'center',
@@ -78,7 +78,7 @@ export const styles = ScaledSheet.create({
     flexDirection: 'row',
   },
   subHeading: {
-    color: '#92B6D4',
+    color: '#EE6C4D',
     fontSize: '22@ms',
     fontWeight: 'bold',
     alignSelf: 'center',
@@ -91,17 +91,37 @@ export const styles = ScaledSheet.create({
     marginTop: '20@ms',
   },
   instructionView: {
-    padding: '20@ms',
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: '10@ms',
   },
   instruction: {
-    fontSize: '14@ms',
-    alignSelf: 'center',
+    marginHorizontal: '30@ms',
+    fontSize: '16@ms',
     paddingTop: '10@ms',
+    textAlign: 'center',
+    color: '#ffffff',
+  },
+  specialInstruction: {
+    fontSize: '18@ms',
   },
   instruction2: {
-    fontSize: '14@ms',
+    fontSize: '20@ms',
     alignSelf: 'center',
-    paddingTop: '10@ms',
+    marginTop: '30@ms',
     fontWeight: 'bold',
+    color: 'white',
+  },
+  animationBox: {
+    marginVertical: '10@ms',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  animation: {
+    height: '100@vs',
+    width: '100@vs',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

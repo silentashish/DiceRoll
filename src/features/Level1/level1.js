@@ -217,25 +217,34 @@ const Level1 = props => {
   renderInstructions = () => {
     return (
       <View style={styles.instructionView}>
-        <Text style={styles.subHeading}>Please Read the Instructions</Text>
+        <Text style={styles.subHeading}>Instructions To Follow</Text>
+        <View style={styles.animationBox}>
+          <LottieView
+            source={require('../../assets/animation/instruction.json')}
+            loop
+            autoPlay
+            style={styles.animation}
+          />
+        </View>
         <Text style={styles.instruction}>
-          Click the button which says 'Roll Dice'. It will roll the dice and 2
-          options will appear on the screen.{'\n'}You have to guess the number.
-          You will be given 20 chance to roll the dice. If you successfully
-          guess the correct number atleast 7 times, you will proceed to next
-          level of the game. {'\n'}Its's all about luck don't get dishearted if
-          you couldn't guess it correctly.
+          Click on Roll Dice. It will roll the dice and 2 options will appear on
+          the screen.Guess the number. You will get 20 chances to roll.
+          {/* Answer at
+          least 7 correctly. And Boom To the next Level. */}
         </Text>
-        <Text style={styles.instruction2}>Best of Luck!</Text>
+        <Text style={[styles.instruction, styles.specialInstruction]}>
+          Answer at least 7 rolls correctly.{'\n'}And Boom To the next Level.
+        </Text>
+        <Text style={styles.instruction2}>All the Best!</Text>
       </View>
     );
   };
 
   return (
-    <View style={{flex: 1, backgroundColor: 'white'}}>
+    <View style={{flex: 1, backgroundColor: '#293241'}}>
       <SafeAreaView backgroundColor={'#92B6D4'} opacity={0.95} />
       <View style={styles.headerView}>
-        <Text style={styles.headerText}>Dice Roll</Text>
+        <Text style={styles.headerText}>DiceRoll</Text>
       </View>
       <Text style={styles.subHeading2}>LEVEL 1</Text>
       <View style={styles.scoreView}>
@@ -245,7 +254,7 @@ const Level1 = props => {
         </View>
 
         <View style={styles.score}>
-          <Text style={styles.headingText}>Dice Roll# </Text>
+          <Text style={styles.headingText}>Dice Rolled: </Text>
           <Text style={styles.valueText}>{diceRollNumber}</Text>
         </View>
       </View>
