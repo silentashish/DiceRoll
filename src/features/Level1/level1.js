@@ -175,6 +175,17 @@ const Level1 = props => {
   const renderOptions = () => {
     return (
       <View style={styles.optionsView}>
+        <View style={styles.animationBox}>
+          <LottieView
+            source={require('../../assets/animation/brainwave.json')}
+            autoPlay
+            loop
+            style={styles.animation2}
+          />
+        </View>
+        <Text style={[styles.specialInstruction, {fontWeight: 'bold'}]}>
+          Use Your Brain Power
+        </Text>
         <View style={styles.optionView2}>
           <ImageBackground
             source={

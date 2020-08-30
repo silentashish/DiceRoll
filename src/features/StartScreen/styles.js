@@ -36,7 +36,7 @@ export const styles = ScaledSheet.create({
   },
   instructionTextTitle: {
     margin: '8@ms',
-    color: 'white',
+    color: '#EE6C4D',
     fontSize: '23@ms',
     fontWeight: 'bold',
   },

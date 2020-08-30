@@ -37,23 +37,23 @@ export const styles = ScaledSheet.create({
     padding: '20@ms',
   },
   score: {
-    height: '45@ms',
-    width: '45%',
-    backgroundColor: '#EE6C4D',
+    height: '50@ms',
+    width: '48%',
+    backgroundColor: '#3D5A80',
     borderRadius: '5@ms',
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: '10@ms',
+    paddingHorizontal: '8@ms',
     flexDirection: 'row',
   },
   headingText: {
     color: 'white',
-    fontSize: '16@ms',
+    fontSize: '20@ms',
     fontWeight: 'bold',
   },
   valueText: {
     color: 'white',
-    fontSize: '16@ms',
+    fontSize: '19@ms',
     fontWeight: 'bold',
   },
   loader: {
@@ -71,6 +71,7 @@ export const styles = ScaledSheet.create({
   optionsView: {
     width: '80%',
     alignSelf: 'center',
+    marginTop: '25@ms',
   },
   optionView2: {
     width: '100%',
@@ -79,7 +80,7 @@ export const styles = ScaledSheet.create({
   },
   subHeading: {
     color: '#EE6C4D',
-    fontSize: '22@ms',
+    fontSize: '21@ms',
     fontWeight: 'bold',
     alignSelf: 'center',
   },
@@ -104,7 +105,10 @@ export const styles = ScaledSheet.create({
     color: '#ffffff',
   },
   specialInstruction: {
+    textAlign: 'center',
     fontSize: '18@ms',
+    color: '#EE6C4D',
+    // fontWeight: 'bold',
   },
   instruction2: {
     fontSize: '20@ms',
@@ -120,8 +124,12 @@ export const styles = ScaledSheet.create({
   },
   animation: {
     height: '100@vs',
-    width: '100@vs',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  animation2: {
+    height: '185@ms',
+    justifyContent: 'center',
+    alignContent: 'center',
   },
 });

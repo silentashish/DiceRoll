@@ -14,11 +14,11 @@ export const styles = ScaledSheet.create({
     height: '45@ms',
     borderRadius: '7@ms',
     width: '30%',
-    backgroundColor: '#92B6D4',
+    backgroundColor: '#3D5A80',
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
-    marginBottom: '30@ms',
+    marginBottom: '25@ms',
   },
   buttonText: {
     textAlign: 'center',

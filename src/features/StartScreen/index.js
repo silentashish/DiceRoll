@@ -22,7 +22,7 @@ export default (StartScreen = props => {
         />
       </View>
       <View style={styles.instruction}>
-        <Text style={[styles.instructionTextTitle]}>Instructions to Play:</Text>
+        <Text style={[styles.instructionTextTitle]}>Simple to Play:</Text>
         <Text style={styles.instructiontext}>Roll Dice</Text>
         <Text style={styles.instructiontext}>Memorize</Text>
         <Text style={styles.instructiontext}>Guess</Text>
